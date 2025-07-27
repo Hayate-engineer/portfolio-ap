@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 寒色系カラーパレット */
+    --primary: 210 100% 50%; /* ブルー */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 25% 95%; /* ライトミントグリーン */
+    --secondary-foreground: 210 40% 20%;
+    --accent: 195 100% 85%; /* ライトブルー */
+    --accent-foreground: 210 40% 20%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 20% 45%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 15%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 50%;
+    --background: 210 25% 98%;
+    --foreground: 210 40% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --primary: 210 100% 60%;
+    --primary-foreground: 210 40% 5%;
+    --secondary: 210 30% 8%;
+    --secondary-foreground: 210 20% 80%;
+    --accent: 210 30% 12%;
+    --accent-foreground: 210 20% 80%;
+    --muted: 210 30% 8%;
+    --muted-foreground: 210 20% 60%;
+    --card: 210 30% 5%;
+    --card-foreground: 210 20% 90%;
+    --border: 210 30% 15%;
+    --input: 210 30% 15%;
+    --ring: 210 100% 60%;
+    --background: 210 40% 3%;
+    --foreground: 210 20% 90%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* next/font/google で定義したフォント変数を使用 */
+    font-family: var(--font-noto-sans-jp), system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-inter), var(--font-noto-sans-jp), system-ui, sans-serif;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .page-header {
+    @apply mb-8 space-y-2;
+  }
+
+  .page-title {
+    @apply text-3xl font-bold text-foreground;
+  }
+
+  .page-description {
+    @apply text-muted-foreground text-lg;
+  }
+
+  .stat-card {
+    @apply bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .nav-link {
+    @apply flex items-center space-x-3 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+  }
+
+  .nav-link-active {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .nav-link-inactive {
+    @apply text-muted-foreground hover:text-foreground hover:bg-accent;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border;
+  }
+
+  .form-field {
+    @apply space-y-2;
+  }
+
+  .form-label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .form-input {
+    @apply w-full px-3 py-2 border border-input rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent;
+  }
+}

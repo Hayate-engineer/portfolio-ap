@@ -5,7 +5,7 @@ Next.jsとSupabaseを用いて開発した試験学習記録アプリです。
 ## サイトイメージ
 メインページの画像を貼れると良いです。
 
-![アプリ画面](https://github.com/aihat9161/PortfolioExample_WorX_ENGINEER-CLASS/blob/f72a921271bddc8d47744118a0838061c302a9d7/docs/%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8%E7%94%BB%E5%83%8F.jpg?raw=true)
+![アプリ画面](<img width="875" height="620" alt="main-page" src="https://github.com/user-attachments/assets/60c187dc-b66c-4ccf-b44f-17ce34e0abea" />)
 
 ## サイトURL
 

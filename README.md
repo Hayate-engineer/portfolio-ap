@@ -3,17 +3,10 @@ Next.jsとSupabaseを用いて開発した試験学習記録アプリです。
 日々の学習進捗を記録し、自己管理を効率化できます。
 
 ## サイトイメージ
-メインページの画像を貼れると良いです。
-
 ![アプリ画面](<img width="875" height="620" alt="main-page" src="https://github.com/user-attachments/assets/60c187dc-b66c-4ccf-b44f-17ce34e0abea" />)
 
-## サイトURL
-
-デプロイした後のアプリのメインページURLを貼りましょう。  
+## サイトURL  
 https://v0-v0-dev-hazel.vercel.app/
-
-
-「画面中部のゲストログインボタンから、メールアドレスとパスワードを入力せずにログインできます。」といった仕様を作れれば、面接官も試しやすいと思います。
 
 ## 使用技術
 - フロントエンド：Next.js 15.3（App Router / Server Components）
